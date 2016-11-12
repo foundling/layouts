@@ -25,7 +25,7 @@ header {
 }
 
 header > h1 {
-    color: whitesmoke;
+    color: coral;
     font-weight: lighter;
 }
 
@@ -38,6 +38,23 @@ header > ul > li {
     color: whitesmoke;
     display: inline-block;
     list-style-type: none;
+    padding-right: 2px;
+}
+
+header > ul > li:nth-child(1) {
+    color: azure;
+}
+
+header > ul > li:nth-child(2) {
+    color: aquamarine;
+}
+
+header > ul > li:nth-child(3) {
+    color: yellow;
+}
+
+header > ul > li:nth-child(4) {
+    color: deepskyblue;
 }
 
 body::-webkit-scrollbar {
