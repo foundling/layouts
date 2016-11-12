@@ -16,7 +16,7 @@ html, body, body * {
 header {
     height: 280px;
     width: 100%;
-    background: rgb(40,40,40);
+    background: #353333;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -62,12 +62,18 @@ body::-webkit-scrollbar {
 }
 
 section {
+    background: lightgray;
     font-family: sans-serif;
     line-height: 1.5em;
     padding-top: 6%;
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+section h1 {
+    color: yellow;
+    font-weight: lighter;
 }
 
 p {
@@ -79,7 +85,7 @@ p {
 
 footer {
     height: 60px;
-    background: rgb(40,40,40);
+    background: #353333;
     border-top: 1px solid rgb(190,190,190);
 
 }
