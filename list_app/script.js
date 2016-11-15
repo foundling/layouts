@@ -1,14 +1,13 @@
 const listItems = document.querySelectorAll('li');
 const colors = [
-    'whitesmoke',
-    'aliceblue',
     'snow',
+    'aliceblue',
     'aquamarine',
     'springgreen',
     'violet',
     'tomato',
     'red',
-    'coral',
+    'orange',
     'yellow',
 ];
 

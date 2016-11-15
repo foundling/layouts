@@ -1,24 +1,12 @@
 html, body {
 
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
 
     font-family: sans-serif; 
 
-}
-
-ul {
-
-    margin: 0 auto;
-    padding: 0px;
-    box-shadow: 4px 4px 0px;
-    width: 85%;
-
-    list-style-type: none;
-
-    text-align: center;
 }
 
 html, body, body * {
@@ -39,11 +27,11 @@ section ul li {
 
 header {
 
-    background: white;
-    height: 7%;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background: white;
     height: 10vh;
      
 }
@@ -52,35 +40,94 @@ header h1 {
 
     font-size: 1.3em;
     text-shadow: 3px 3px 0px lightgray;
+    width: calc(100% - 120px);
+    text-align: center;
 
+}
+
+header > aside {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > aside > i:nth-child(1) {
+    padding: 10px;
 }
 
 section {
 
-    height: 93%;
-    padding: 40px; 
-    
+    height: 90vh;
+    padding: 40px 80px; 
     background: whitesmoke;
 
 }
 
+ul {
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+section ul {
+
+    width: 100%;
+    height: calc(90vh - 80px);
+    max-height: calc(90vh - 80px);
+
+    overflow-y: scroll;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    margin: 0 auto;
+    padding: 0px;
+
+    box-shadow: 4px 4px 0px;
+
+    list-style-type: none;
+
+    text-align: center;
+}
+
+
+
 section ul li {
 
+    white-space: nowrap;
     display: flex;
     align-items: center; 
     justify-content: center;
+    overflow-x: scroll;
 
-    background: lightcoral;
     height: 10vh;
 
 }
 
+li.item a.item-link {
+    width: 60%;
+}
+
+li.item > aside.toggle-read-wrapper {
+    margin-right: auto;
+}
+li.item > aside.remove-wrapper {
+    margin-left: auto;
+}
+
+li.item > aside.toggle-read-wrapper,
+li.item > aside.remove-wrapper {
+    width: 20%;    
+}
+
 section ul li a {
+    overflow-x: scroll;
 }
 
 footer {
 
     background: rgb(70,70,70);;
-    height: 0%;
+    height: 0vh;
 
 }
